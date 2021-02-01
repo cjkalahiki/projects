@@ -1,0 +1,370 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: auto;
+}
+
+.navBar {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    display: inline;
+}
+
+
+/* links inside of navbar */
+.navBar a {
+    float: right;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    text-decoration: solid;
+    font-weight: bold;
+}
+
+#premium:hover { 
+    text-decoration: underline;
+}
+
+/* About Drop Down Container */
+.aboutDropDown {
+    float: right;
+    overflow: hidden;
+}
+
+/* Dropdown Button */
+.aboutDropDown .aboutButton {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 30px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Links in About Dropbox */
+.about-content a {
+    float: none;
+    color: rgb(126, 126, 126);
+    text-decoration: none;
+    display: inline-block;
+    text-align: left;
+}
+
+.about-content a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* show dropdown menu on hover (change to click?)*/
+.aboutDropDown:hover .about-content {
+    display: block;
+}
+
+.about-content {
+    display: none;
+    position: relative;
+    
+
+    background-color: white;
+    width: 200px;
+    z-index: 1;
+    
+    padding: 0;
+
+    border-radius: 3px;
+}
+
+.aboutDropDown a:hover{
+    background-color: white;
+}
+
+/* HELP DROP DOWN */
+/* Help Drop Down Container */
+.helpDropDown {
+    float: right;
+    overflow: hidden;
+}
+
+/* Dropdown Button */
+.helpDropDown .helpButton {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 30px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Links in Help Dropbox */
+.help-content a {
+    float: none;
+    color: rgb(126, 126, 126);
+    text-decoration: none;
+    display: inline-block;
+    text-align: left;
+}
+
+.help-content a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* show dropdown menu on hover (change to click?)*/
+.helpDropDown:hover .help-content {
+    display: block;
+}
+
+.help-content {
+    display: none;
+    position: relative;
+    
+
+    background-color: white;
+    width: 200px;
+    z-index: 1;
+    
+    padding: 0;
+
+    border-radius: 3px;
+}
+
+.helpDropDown a:hover{
+    background-color: white;
+}
+
+/* COMMUNITY DROP DOWN */
+
+/* Community Drop Down Container */
+.communityDropDown {
+    float: right;
+    overflow: hidden;
+}
+
+/* Dropdown Button */
+.communityDropDown .communityButton {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 30px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Links in Help Dropbox */
+.community-content a {
+    float: none;
+    color: rgb(126, 126, 126);
+    text-decoration: none;
+    display: inline-block;
+    text-align: left;
+}
+
+.community-content a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* show dropdown menu on hover (change to click?)*/
+.communityDropDown:hover .community-content {
+    display: block;
+}
+
+.community-content {
+    display: none;
+    position: relative;
+    
+
+    background-color: white;
+    width: 200px;
+    z-index: 1;
+    
+    padding: 0;
+
+    border-radius: 3px;
+}
+
+.communityDropDown a:hover{
+    background-color: white;
+}
+
+#kastLogo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    bottom: 0;
+
+    width: 200px;
+    float: left;
+}
+
+#kastLogo:hover{
+    animation-name: expandLogo;
+    animation-duration:0.5s;
+    animation-iteration-count: 1;
+    animation-direction:alternate; /* runs animation in loop */
+    animation-timing-function: ease-in-out;
+    animation-fill-mode:forwards;
+}
+
+@keyframes expandLogo {
+    0% {width: 200px;}
+    100% {width: 225px;}
+}
+
+#openKast { /* add animation to increase border height/width on hover */
+
+    border: solid white;
+    border-width: 1px;
+    border-radius: 2px;
+
+    font-weight:unset;
+    padding: 0;
+
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 29px;
+
+    height: 28px;
+    width: 110px;
+    
+    position:relative;
+    top: 22px;
+    left: 30px;
+}
+
+
+.firstView {
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    z-index: -1;
+}
+
+.layout {
+    display: block;
+}
+
+
+
+.laptop {
+    width: 42%;
+
+    position: relative;
+    top: 125px;
+    left: 29%;
+    bottom: 0;
+    right: 0;
+}
+
+.firstView h1 {
+    color: white;
+    font-size: 45px;
+    text-align: center;
+
+    position: relative;
+    top: 120px;
+}
+
+.firstView h3 {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: unset;
+    line-height: 1.8;
+
+    position: relative;
+    top: 120px;
+
+    padding-right: 450px;
+    padding-left: 450px;
+}
+
+.watchParty {
+    font-weight: bold;
+}
+
+.orangeButton {
+    border: none;
+    border-radius: 3px;
+
+    outline: none;
+    padding: 15px;
+    width: 250px;
+    background-color: inherit;
+    
+    margin: 0;
+    
+
+    background-color: orange;
+
+    position: relative;
+    top: 150px;
+    left: 41.5%;
+
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.orangeButton:hover {
+    cursor: pointer;
+}
+
+.background {
+    position: absolute;
+
+    width: 100%;
+    height: 135%;
+}
+
+.secondView {
+    position: relative;
+    top: 300px;
+
+    display: grid;
+    grid-template-columns: 28.5% 14.2% 14.2% 14.2% 28.5%; /* divided so that the 1fr will be the logos; use percentages to determine px conversion  */
+    grid-template-rows: 16.6% 33% 33% 16.6%; /* the 2fr are for logos */
+
+    text-align: center;
+}
+
+.secondView h2{
+    grid-column: 2 / 5;
+    grid-row: 1;
+
+    color:rgb(126, 126, 126);
+}
+
+.secondView h3 {
+    grid-column: 2 / 5;
+    grid-row: 4;
+
+    color:rgb(126, 126, 126);
+
+}
+
+.one {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.two {
+    grid-column: 3 / 4;
+}
